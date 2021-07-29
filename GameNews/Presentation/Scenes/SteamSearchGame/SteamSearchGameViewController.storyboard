@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="T0Z-1a-DqW">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Steam Search Game View Controller-->
+        <scene sceneID="czx-kr-FeI">
+            <objects>
+                <viewController storyboardIdentifier="SteamSearchGameVC" id="3YY-X0-HSc" customClass="SteamSearchGameViewController" customModule="GameNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NRZ-BN-7eG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="Search Game" translatesAutoresizingMaskIntoConstraints="NO" id="RdY-gT-FG3">
+                                <rect key="frame" x="0.0" y="88" width="414" height="56"/>
+                                <color key="barTintColor" name="TableViewBackground"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="searchField.textColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="suu-Oi-54a">
+                                <rect key="frame" x="0.0" y="154" width="414" height="659"/>
+                                <color key="backgroundColor" name="TableViewBackground"/>
+                                <color key="tintColor" name="TableViewBackground"/>
+                                <color key="separatorColor" name="TableViewBackground"/>
+                                <color key="sectionIndexBackgroundColor" name="TableViewBackground"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TU5-bf-E99"/>
+                        <color key="backgroundColor" name="ViewBackground"/>
+                        <constraints>
+                            <constraint firstItem="suu-Oi-54a" firstAttribute="leading" secondItem="TU5-bf-E99" secondAttribute="leading" id="0wn-Gf-FGF"/>
+                            <constraint firstItem="RdY-gT-FG3" firstAttribute="leading" secondItem="TU5-bf-E99" secondAttribute="leading" id="2Tp-a2-Z8v"/>
+                            <constraint firstItem="RdY-gT-FG3" firstAttribute="top" secondItem="TU5-bf-E99" secondAttribute="top" id="3dy-xh-Aii"/>
+                            <constraint firstItem="TU5-bf-E99" firstAttribute="trailing" secondItem="suu-Oi-54a" secondAttribute="trailing" id="FpP-g1-6zi"/>
+                            <constraint firstItem="TU5-bf-E99" firstAttribute="bottom" secondItem="suu-Oi-54a" secondAttribute="bottom" id="Sxa-az-oP2"/>
+                            <constraint firstItem="RdY-gT-FG3" firstAttribute="trailing" secondItem="TU5-bf-E99" secondAttribute="trailing" id="bRj-iH-4NG"/>
+                            <constraint firstItem="suu-Oi-54a" firstAttribute="top" secondItem="RdY-gT-FG3" secondAttribute="bottom" constant="10" id="k3v-Vq-Tn5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="GbX-pS-xgU"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="searchBar" destination="RdY-gT-FG3" id="Geq-jM-Eja"/>
+                        <outlet property="tableView" destination="suu-Oi-54a" id="cWr-l8-2s2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kpp-2V-Q2b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1202.8985507246377" y="143.97321428571428"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="m3p-vC-Kco">
+            <objects>
+                <navigationController storyboardIdentifier="SteamSearchGameViewController" automaticallyAdjustsScrollViewInsets="NO" id="T0Z-1a-DqW" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" id="fj8-vP-KJh"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Np5-nQ-Hbf">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3YY-X0-HSc" kind="relationship" relationship="rootViewController" id="T0X-4m-7gn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CbF-zl-ytX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="292.75362318840581" y="143.97321428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <namedColor name="TableViewBackground">
+            <color red="0.1289999932050705" green="0.13699999451637268" blue="0.18799999356269836" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ViewBackground">
+            <color red="0.12200000137090683" green="0.11400000005960464" blue="0.16899999976158142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

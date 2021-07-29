@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Latest Trailers-->
+        <scene sceneID="aXK-6k-Mhj">
+            <objects>
+                <viewController storyboardIdentifier="VideosViewController" id="VTU-fc-KbR" customClass="VideosViewController" customModule="GameNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lEK-am-o3O">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Uyx-Gb-bke">
+                                <rect key="frame" x="0.0" y="118" width="414" height="695"/>
+                                <color key="backgroundColor" name="ViewBackground"/>
+                                <color key="tintColor" name="ViewBackground"/>
+                                <color key="separatorColor" name="ViewBackground"/>
+                                <color key="sectionIndexBackgroundColor" name="TableViewBackground"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latest Trailers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lxc-RB-UGI">
+                                <rect key="frame" x="20" y="64" width="179" height="34"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Nbm-U9-ZHn"/>
+                        <color key="backgroundColor" name="ViewBackground"/>
+                        <constraints>
+                            <constraint firstItem="Lxc-RB-UGI" firstAttribute="leading" secondItem="Nbm-U9-ZHn" secondAttribute="leading" constant="20" id="CDG-b6-8hQ"/>
+                            <constraint firstItem="Lxc-RB-UGI" firstAttribute="top" secondItem="Nbm-U9-ZHn" secondAttribute="top" constant="20" id="IEB-UY-VZB"/>
+                            <constraint firstItem="Uyx-Gb-bke" firstAttribute="bottom" secondItem="Nbm-U9-ZHn" secondAttribute="bottom" id="JIP-rV-9EW"/>
+                            <constraint firstItem="Uyx-Gb-bke" firstAttribute="trailing" secondItem="Nbm-U9-ZHn" secondAttribute="trailing" id="NLx-fx-WbA"/>
+                            <constraint firstItem="Uyx-Gb-bke" firstAttribute="leading" secondItem="Nbm-U9-ZHn" secondAttribute="leading" id="aHQ-7L-BJD"/>
+                            <constraint firstItem="Uyx-Gb-bke" firstAttribute="top" secondItem="Lxc-RB-UGI" secondAttribute="bottom" constant="20" id="cYj-h8-BUN"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Trailers" image="play.rectangle" catalog="system" id="McJ-aM-ewO"/>
+                    <navigationItem key="navigationItem" title="Latest Trailers" largeTitleDisplayMode="always" id="Gzs-X7-WYO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="Uyx-Gb-bke" id="704-fA-G2M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lha-nm-fBm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2044.9275362318842" y="204.91071428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="play.rectangle" catalog="system" width="128" height="93"/>
+        <namedColor name="TableViewBackground">
+            <color red="0.1289999932050705" green="0.13699999451637268" blue="0.18799999356269836" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ViewBackground">
+            <color red="0.12200000137090683" green="0.11400000005960464" blue="0.16899999976158142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

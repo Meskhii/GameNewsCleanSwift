@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="159" id="b4w-bo-Ucs" customClass="GameInformerNewsCell" customModule="GameNews" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="454" height="159"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="b4w-bo-Ucs" id="BI2-dZ-Tfu">
+                <rect key="frame" x="0.0" y="0.0" width="454" height="159"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="egT-Rm-NEH">
+                        <rect key="frame" x="20" y="20" width="414" height="120"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ign_logo" translatesAutoresizingMaskIntoConstraints="NO" id="oaJ-8L-WeU">
+                                <rect key="frame" x="116" y="88" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="hUu-QB-0dJ"/>
+                                    <constraint firstAttribute="height" constant="20" id="qGR-EE-AUH"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mau-TW-N08">
+                                <rect key="frame" x="340" y="88" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="7hx-Vj-Rrh"/>
+                                    <constraint firstAttribute="width" constant="20" id="9aO-PT-C3P"/>
+                                </constraints>
+                                <state key="normal" image="ic_share"/>
+                                <connections>
+                                    <action selector="shareNews:" destination="b4w-bo-Ucs" eventType="touchUpInside" id="oze-zZ-WXb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Rp-bQ-SZ4">
+                                <rect key="frame" x="380" y="90" width="14" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="cax-Rp-Yho"/>
+                                    <constraint firstAttribute="width" constant="14" id="qge-ms-yXA"/>
+                                </constraints>
+                                <state key="normal" image="ic_bookmark_empty"/>
+                                <connections>
+                                    <action selector="bookmarkNews:" destination="b4w-bo-Ucs" eventType="touchUpInside" id="Dlh-gc-aw7"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SNu-nO-0jm">
+                                <rect key="frame" x="10" y="10" width="98" height="98"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="98" id="1Zg-VP-tBj"/>
+                                    <constraint firstAttribute="width" constant="98" id="RGJ-vQ-S7V"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ksl-56-lJI">
+                                <rect key="frame" x="116" y="56" width="26.5" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bTA-fS-u5T">
+                                <rect key="frame" x="116" y="10" width="278" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="VFj-yI-AgS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Web Page Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBd-ii-t5g">
+                                <rect key="frame" x="144" y="89.5" width="110" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="CellBackground"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="SNu-nO-0jm" secondAttribute="bottom" constant="12" id="27a-1W-6xB"/>
+                            <constraint firstItem="ksl-56-lJI" firstAttribute="top" secondItem="bTA-fS-u5T" secondAttribute="bottom" constant="4" id="3IX-xd-kWE"/>
+                            <constraint firstItem="2Rp-bQ-SZ4" firstAttribute="leading" secondItem="Mau-TW-N08" secondAttribute="trailing" constant="20" id="6DZ-uJ-eob"/>
+                            <constraint firstItem="ksl-56-lJI" firstAttribute="leading" secondItem="SNu-nO-0jm" secondAttribute="trailing" constant="8" symbolic="YES" id="6UM-d5-t08"/>
+                            <constraint firstAttribute="trailing" secondItem="bTA-fS-u5T" secondAttribute="trailing" constant="20" id="BzW-iB-9qD"/>
+                            <constraint firstAttribute="bottom" secondItem="2Rp-bQ-SZ4" secondAttribute="bottom" constant="10" id="Ea5-XK-dVV"/>
+                            <constraint firstItem="yBd-ii-t5g" firstAttribute="leading" secondItem="oaJ-8L-WeU" secondAttribute="trailing" constant="8" symbolic="YES" id="OAG-CH-u6K"/>
+                            <constraint firstAttribute="trailing" secondItem="2Rp-bQ-SZ4" secondAttribute="trailing" constant="20" symbolic="YES" id="OUh-GC-EpQ"/>
+                            <constraint firstItem="Mau-TW-N08" firstAttribute="centerY" secondItem="oaJ-8L-WeU" secondAttribute="centerY" id="RdC-5z-4h8"/>
+                            <constraint firstItem="oaJ-8L-WeU" firstAttribute="leading" secondItem="SNu-nO-0jm" secondAttribute="trailing" constant="8" symbolic="YES" id="TFh-1v-zk8"/>
+                            <constraint firstItem="SNu-nO-0jm" firstAttribute="top" secondItem="egT-Rm-NEH" secondAttribute="top" constant="10" id="UTQ-S2-4ew"/>
+                            <constraint firstItem="oaJ-8L-WeU" firstAttribute="bottom" secondItem="SNu-nO-0jm" secondAttribute="bottom" id="aBH-o2-FMo"/>
+                            <constraint firstItem="yBd-ii-t5g" firstAttribute="centerY" secondItem="oaJ-8L-WeU" secondAttribute="centerY" id="dC8-78-unm"/>
+                            <constraint firstItem="bTA-fS-u5T" firstAttribute="top" secondItem="egT-Rm-NEH" secondAttribute="top" constant="10" id="s8v-Da-fmd"/>
+                            <constraint firstItem="SNu-nO-0jm" firstAttribute="leading" secondItem="egT-Rm-NEH" secondAttribute="leading" constant="10" id="vTe-4X-9ct"/>
+                            <constraint firstAttribute="height" constant="120" id="wvb-HZ-8Dw"/>
+                            <constraint firstItem="bTA-fS-u5T" firstAttribute="leading" secondItem="SNu-nO-0jm" secondAttribute="trailing" constant="8" symbolic="YES" id="xD9-c8-7Xb"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" name="TableViewBackground"/>
+                <constraints>
+                    <constraint firstItem="egT-Rm-NEH" firstAttribute="top" secondItem="BI2-dZ-Tfu" secondAttribute="top" constant="20" symbolic="YES" id="FmT-Ky-zdo"/>
+                    <constraint firstItem="egT-Rm-NEH" firstAttribute="leading" secondItem="BI2-dZ-Tfu" secondAttribute="leading" constant="20" symbolic="YES" id="ZSF-Jh-DRk"/>
+                    <constraint firstAttribute="bottom" secondItem="egT-Rm-NEH" secondAttribute="bottom" constant="19" id="sTE-UF-MuY"/>
+                    <constraint firstAttribute="trailing" secondItem="egT-Rm-NEH" secondAttribute="trailing" constant="20" symbolic="YES" id="wtP-LU-6SA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="GuW-lM-Z4k"/>
+            <connections>
+                <outlet property="bookmarkButton" destination="2Rp-bQ-SZ4" id="J6E-Pr-4lJ"/>
+                <outlet property="newsDateLabel" destination="ksl-56-lJI" id="R6B-4l-ieE"/>
+                <outlet property="newsImageView" destination="SNu-nO-0jm" id="Aa4-xw-VQV"/>
+                <outlet property="newsTitleLabel" destination="bTA-fS-u5T" id="DAO-8i-1dq"/>
+                <outlet property="newsView" destination="egT-Rm-NEH" id="7mo-Qm-iYP"/>
+                <outlet property="shareButton" destination="Mau-TW-N08" id="qyT-Cz-loZ"/>
+                <outlet property="webPageImageView" destination="oaJ-8L-WeU" id="bmY-RR-IhH"/>
+                <outlet property="webPageNameLabel" destination="yBd-ii-t5g" id="xXu-Ln-8Xp"/>
+            </connections>
+            <point key="canvasLocation" x="266.66666666666669" y="133.59375"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_bookmark_empty" width="30" height="50"/>
+        <image name="ic_share" width="52" height="52"/>
+        <image name="ign_logo" width="50" height="50"/>
+        <namedColor name="CellBackground">
+            <color red="0.14499999582767487" green="0.15700000524520874" blue="0.21600000560283661" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TableViewBackground">
+            <color red="0.1289999932050705" green="0.13699999451637268" blue="0.18799999356269836" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

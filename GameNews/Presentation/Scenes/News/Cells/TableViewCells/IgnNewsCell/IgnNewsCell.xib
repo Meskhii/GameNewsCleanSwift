@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="467" id="KGk-i7-Jjw" customClass="IgnNewsCell" customModule="GameNews" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="454" height="467"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="454" height="467"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KuT-8v-ryY">
+                        <rect key="frame" x="20" y="20" width="414" height="437"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ign_logo" translatesAutoresizingMaskIntoConstraints="NO" id="jiD-wq-pcv">
+                                <rect key="frame" x="20" y="20" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="AsM-qF-zor"/>
+                                    <constraint firstAttribute="height" constant="25" id="u2l-wJ-a1a"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Wdo-xr-UnW">
+                                <rect key="frame" x="20" y="65" width="374" height="314"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0TG-74-ju5">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UjW-PV-zLY">
+                                        <rect key="frame" x="0.0" y="31.5" width="374" height="32.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32.5" id="lwc-lx-JJd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gZ2-bh-Xti">
+                                        <rect key="frame" x="0.0" y="74" width="374" height="240"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="240" id="KRA-BF-Fbz"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="UjW-PV-zLY" firstAttribute="leading" secondItem="Wdo-xr-UnW" secondAttribute="leading" id="06R-sa-pG4"/>
+                                    <constraint firstItem="gZ2-bh-Xti" firstAttribute="top" secondItem="UjW-PV-zLY" secondAttribute="bottom" constant="10" id="7CS-4W-UX9"/>
+                                    <constraint firstAttribute="trailing" secondItem="UjW-PV-zLY" secondAttribute="trailing" id="P22-rw-Spr"/>
+                                    <constraint firstAttribute="bottom" secondItem="gZ2-bh-Xti" secondAttribute="bottom" id="Z4z-cF-xCk"/>
+                                    <constraint firstItem="UjW-PV-zLY" firstAttribute="top" secondItem="0TG-74-ju5" secondAttribute="bottom" constant="10" id="eXE-hq-U0y"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EK9-al-wxx">
+                                <rect key="frame" x="20" y="397" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="rjB-U6-Rb7"/>
+                                    <constraint firstAttribute="height" constant="20" id="zwW-Am-LCo"/>
+                                </constraints>
+                                <state key="normal" image="ic_share"/>
+                                <connections>
+                                    <action selector="shareNews:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Edq-8g-rkF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BDM-85-E4p">
+                                <rect key="frame" x="380" y="397" width="14" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="14" id="Bep-aQ-Ivy"/>
+                                    <constraint firstAttribute="height" constant="20" id="q0T-fj-EmE"/>
+                                </constraints>
+                                <state key="normal" image="ic_bookmark_empty"/>
+                                <connections>
+                                    <action selector="bookmarkNews:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="KlS-cI-FH4"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Web Page Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QDD-31-B8Y">
+                                <rect key="frame" x="55" y="23.5" width="117" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="CellBackground"/>
+                        <constraints>
+                            <constraint firstItem="QDD-31-B8Y" firstAttribute="leading" secondItem="jiD-wq-pcv" secondAttribute="trailing" constant="10" id="2Rm-iS-c3A"/>
+                            <constraint firstItem="EK9-al-wxx" firstAttribute="top" secondItem="Wdo-xr-UnW" secondAttribute="bottom" constant="18" id="3hp-s4-xZS"/>
+                            <constraint firstAttribute="trailing" secondItem="Wdo-xr-UnW" secondAttribute="trailing" constant="20" id="6Xg-GS-L4x"/>
+                            <constraint firstItem="Wdo-xr-UnW" firstAttribute="top" secondItem="jiD-wq-pcv" secondAttribute="bottom" constant="20" id="CLB-VC-wRS"/>
+                            <constraint firstItem="QDD-31-B8Y" firstAttribute="centerY" secondItem="jiD-wq-pcv" secondAttribute="centerY" id="EEm-TK-ME2"/>
+                            <constraint firstItem="EK9-al-wxx" firstAttribute="leading" secondItem="KuT-8v-ryY" secondAttribute="leading" constant="20" id="IzL-6E-Um7"/>
+                            <constraint firstItem="jiD-wq-pcv" firstAttribute="top" secondItem="KuT-8v-ryY" secondAttribute="top" constant="20" id="OKZ-mi-f1g"/>
+                            <constraint firstItem="BDM-85-E4p" firstAttribute="trailing" secondItem="Wdo-xr-UnW" secondAttribute="trailing" id="QvB-Jn-3uT"/>
+                            <constraint firstItem="BDM-85-E4p" firstAttribute="centerY" secondItem="EK9-al-wxx" secondAttribute="centerY" id="SYZ-Vb-pnM"/>
+                            <constraint firstItem="jiD-wq-pcv" firstAttribute="leading" secondItem="KuT-8v-ryY" secondAttribute="leading" constant="20" id="c1X-6g-Sxj"/>
+                            <constraint firstAttribute="bottom" secondItem="EK9-al-wxx" secondAttribute="bottom" constant="20" id="odw-HR-Xtr"/>
+                            <constraint firstItem="Wdo-xr-UnW" firstAttribute="leading" secondItem="KuT-8v-ryY" secondAttribute="leading" constant="20" id="zdo-PM-3gt"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1al-6q-wyk">
+                        <rect key="frame" x="0.0" y="457" width="454" height="10"/>
+                        <color key="backgroundColor" name="TableViewBackground"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="UEn-yT-dmg"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" name="TableViewBackground"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="1al-6q-wyk" secondAttribute="trailing" id="51f-Bn-O6D"/>
+                    <constraint firstAttribute="bottom" secondItem="1al-6q-wyk" secondAttribute="bottom" id="NTE-tX-max"/>
+                    <constraint firstItem="1al-6q-wyk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="VuO-8y-rCo"/>
+                    <constraint firstItem="KuT-8v-ryY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="ZvC-hE-gEi"/>
+                    <constraint firstItem="1al-6q-wyk" firstAttribute="top" secondItem="KuT-8v-ryY" secondAttribute="bottom" id="cUb-MA-KPD"/>
+                    <constraint firstItem="KuT-8v-ryY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="fna-NZ-LcA"/>
+                    <constraint firstAttribute="trailing" secondItem="KuT-8v-ryY" secondAttribute="trailing" constant="20" id="mkT-P9-E9K"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bookmarkButton" destination="BDM-85-E4p" id="YaY-cY-oi0"/>
+                <outlet property="newsDateLabel" destination="UjW-PV-zLY" id="0Qz-uD-rsu"/>
+                <outlet property="newsImageView" destination="gZ2-bh-Xti" id="chM-Uf-CHO"/>
+                <outlet property="newsTitleLabel" destination="0TG-74-ju5" id="gkl-Eu-NrG"/>
+                <outlet property="newsView" destination="KuT-8v-ryY" id="SLG-D3-dsG"/>
+                <outlet property="shareButton" destination="EK9-al-wxx" id="nrz-9X-43k"/>
+                <outlet property="webPageImageView" destination="jiD-wq-pcv" id="e0K-9Q-1HP"/>
+                <outlet property="webPageNameLabel" destination="QDD-31-B8Y" id="gYG-x5-VMK"/>
+            </connections>
+            <point key="canvasLocation" x="228.98550724637684" y="264.84375"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_bookmark_empty" width="30" height="50"/>
+        <image name="ic_share" width="52" height="52"/>
+        <image name="ign_logo" width="50" height="50"/>
+        <namedColor name="CellBackground">
+            <color red="0.14499999582767487" green="0.15700000524520874" blue="0.21600000560283661" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TableViewBackground">
+            <color red="0.1289999932050705" green="0.13699999451637268" blue="0.18799999356269836" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Profile-->
+        <scene sceneID="m3Q-Ng-gn8">
+            <objects>
+                <viewController storyboardIdentifier="ProfileViewController" id="opJ-Ue-zDK" customClass="ProfileViewController" customModule="GameNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2hg-YX-D8B">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wKx-10-fzr">
+                                <rect key="frame" x="107.5" y="60" width="160" height="160"/>
+                                <color key="tintColor" red="0.95294117647058818" green="0.2627450980392157" blue="0.15294117647058825" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="czA-Bb-rBx"/>
+                                    <constraint firstAttribute="height" constant="160" id="xOk-Sx-Jko"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Full Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ig-99-5bp">
+                                <rect key="frame" x="20" y="246" width="335" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="77P-45-ets">
+                                <rect key="frame" x="20" y="338" width="335" height="260"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SLX-az-ac0">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="52"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="52" id="wuQ-6e-kaa"/>
+                                        </constraints>
+                                        <state key="normal" title="Update Profie Picture">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="updateProfilePicture:" destination="opJ-Ue-zDK" eventType="touchUpInside" id="pAM-E7-6gR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zf9-oj-g3c">
+                                        <rect key="frame" x="0.0" y="52" width="335" height="52"/>
+                                        <state key="normal" title="Request News Web Page">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="requestNewsWebPage:" destination="opJ-Ue-zDK" eventType="touchUpInside" id="R6P-dl-iKF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gGr-aW-ARw">
+                                        <rect key="frame" x="0.0" y="104" width="335" height="52"/>
+                                        <state key="normal" title="Request Feature">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="requestFeature:" destination="opJ-Ue-zDK" eventType="touchUpInside" id="rue-Ho-Wen"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bR9-DG-87j">
+                                        <rect key="frame" x="0.0" y="156" width="335" height="52"/>
+                                        <state key="normal" title="Rate The App">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evi-dy-cAG">
+                                        <rect key="frame" x="0.0" y="208" width="335" height="52"/>
+                                        <state key="normal" title="Logout">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="logoutUser:" destination="opJ-Ue-zDK" eventType="touchUpInside" id="T5Z-fk-f8g"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="P8P-0o-XuE"/>
+                        <color key="backgroundColor" name="ViewBackground"/>
+                        <constraints>
+                            <constraint firstItem="P8P-0o-XuE" firstAttribute="bottom" secondItem="77P-45-ets" secondAttribute="bottom" constant="20" id="9yo-tm-Kjh"/>
+                            <constraint firstItem="77P-45-ets" firstAttribute="top" secondItem="9ig-99-5bp" secondAttribute="bottom" constant="20" id="Ccx-3s-8UX"/>
+                            <constraint firstItem="9ig-99-5bp" firstAttribute="top" secondItem="wKx-10-fzr" secondAttribute="bottom" constant="26" id="R4r-dZ-54V"/>
+                            <constraint firstItem="P8P-0o-XuE" firstAttribute="trailing" secondItem="9ig-99-5bp" secondAttribute="trailing" constant="20" id="SQx-Ko-Zc1"/>
+                            <constraint firstItem="P8P-0o-XuE" firstAttribute="trailing" secondItem="77P-45-ets" secondAttribute="trailing" constant="20" id="W6j-Bq-5PV"/>
+                            <constraint firstItem="9ig-99-5bp" firstAttribute="leading" secondItem="P8P-0o-XuE" secondAttribute="leading" constant="20" id="diT-yS-jRV"/>
+                            <constraint firstItem="wKx-10-fzr" firstAttribute="centerX" secondItem="2hg-YX-D8B" secondAttribute="centerX" id="hE8-q6-sin"/>
+                            <constraint firstItem="77P-45-ets" firstAttribute="leading" secondItem="P8P-0o-XuE" secondAttribute="leading" constant="20" id="m9l-KW-13M"/>
+                            <constraint firstItem="wKx-10-fzr" firstAttribute="top" secondItem="P8P-0o-XuE" secondAttribute="top" constant="60" id="p20-pM-gl1"/>
+                            <constraint firstItem="9ig-99-5bp" firstAttribute="centerX" secondItem="wKx-10-fzr" secondAttribute="centerX" id="v3t-aU-3VM"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" id="yfG-nq-aB6"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="userFullNameLabel" destination="9ig-99-5bp" id="WbZ-d4-vTZ"/>
+                        <outlet property="userProfileImageView" destination="wKx-10-fzr" id="7Ts-Pp-BEv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VVt-GQ-lhK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="281" y="-87"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <namedColor name="ViewBackground">
+            <color red="0.12200000137090683" green="0.11400000005960464" blue="0.16899999976158142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

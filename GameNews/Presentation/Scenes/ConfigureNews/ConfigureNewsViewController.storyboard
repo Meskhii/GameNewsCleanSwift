@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9tF-ld-SSI">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Configure News View Controller-->
+        <scene sceneID="dB0-4a-Gk7">
+            <objects>
+                <viewController storyboardIdentifier="ConfigureNewsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9tF-ld-SSI" customClass="ConfigureNewsViewController" customModule="GameNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mki-hp-Tdz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="J24-f2-YdM">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" name="TableViewBackground"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Arp-hS-Gcf">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1Lo-ep-FH4"/>
+                        <color key="backgroundColor" name="ViewBackground"/>
+                        <constraints>
+                            <constraint firstItem="1Lo-ep-FH4" firstAttribute="trailing" secondItem="J24-f2-YdM" secondAttribute="trailing" id="529-HF-8Bh"/>
+                            <constraint firstItem="J24-f2-YdM" firstAttribute="leading" secondItem="1Lo-ep-FH4" secondAttribute="leading" id="Ge7-4n-Wnm"/>
+                            <constraint firstItem="1Lo-ep-FH4" firstAttribute="bottom" secondItem="J24-f2-YdM" secondAttribute="bottom" id="JaR-HV-av0"/>
+                            <constraint firstItem="J24-f2-YdM" firstAttribute="top" secondItem="1Lo-ep-FH4" secondAttribute="top" id="pS4-Av-W6p"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="J24-f2-YdM" id="V5p-tW-JlO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kgs-Yi-nsw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="213" y="163"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="TableViewBackground">
+            <color red="0.1289999932050705" green="0.13699999451637268" blue="0.18799999356269836" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ViewBackground">
+            <color red="0.12200000137090683" green="0.11400000005960464" blue="0.16899999976158142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="WebPagesCell" customModule="GameNews" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="70" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="70" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCT-ag-wTX">
+                        <rect key="frame" x="10" y="0.0" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="OdX-jn-KFO"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="aCT-ag-wTX" secondAttribute="trailing" constant="10" id="M52-2c-fiV"/>
+                <constraint firstItem="aCT-ag-wTX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="PaI-W0-WXd"/>
+                <constraint firstAttribute="bottom" secondItem="aCT-ag-wTX" secondAttribute="bottom" id="cD1-0P-d55"/>
+                <constraint firstItem="aCT-ag-wTX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="vlO-2r-hHb"/>
+            </constraints>
+            <size key="customSize" width="98" height="67"/>
+            <connections>
+                <outlet property="webSitesButton" destination="aCT-ag-wTX" id="I7q-dx-vO3"/>
+            </connections>
+            <point key="canvasLocation" x="-211.59420289855075" y="136.60714285714286"/>
+        </collectionViewCell>
+    </objects>
+</document>
