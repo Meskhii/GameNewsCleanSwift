@@ -21,3 +21,5 @@ Project Created within [TBC IT Academy IOS mobile development Course](https://ww
 70% Of Code covered using XCTests and couple files are tested using Nimbe, Quick and MockingJay Libraries. Known bug sometimes random error occurs during testing, every time on random line in a random file. 
 
 P.s Because of using VMWare, there were some problems with git and commits this is final application without commits, first part with commits and without unit tests you can see [here](https://github.com/Meskhii/GameNews).
+
+P.s.s Another problem for Configure News ViewController, there is 2 checkmark icons that dissapears after pushing project on github.
